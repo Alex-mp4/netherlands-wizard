@@ -18,7 +18,9 @@ h1, p {
 h1 {
     font-size: 76px; 
 }
-
+h2 {
+    font-size: 50px;
+}
 /* Navbar */
 .topnav > ul {
     display: flex;
@@ -38,4 +40,9 @@ h1 {
     border-style: solid;
     border-image: linear-gradient(to right, #34A5E4, #B835E7) 1;
     border-radius: 50px;
+}
+hr {
+    height: 7px;
+    border-radius: 50px;
+    border: none;
 }
