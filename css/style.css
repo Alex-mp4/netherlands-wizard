@@ -1,35 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body {
+    scroll-behavior: smooth;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: black;
+    background-color: #060312;
 }
-p, a, button, span {
+
+p,
+a,
+button,
+span {
     font-family: 'Raleway', sans-serif;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'MedievalSharp', cursive;
 }
-h1, p {
+
+h1,
+p {
     color: white;
 }
+
 h1 {
-    font-size: 76px; 
+    font-size: 76px;
 }
+
 h2 {
     font-size: 50px;
 }
+
 /* Navbar */
-.topnav > ul {
+.topnav>ul {
     display: flex;
     gap: 100px;
     margin: 50px 0px;
     justify-content: center;
 }
 
-.topnav > ul > li > a {
+.topnav>ul>li>a {
     color: white;
     text-decoration: none;
 }
@@ -41,6 +61,7 @@ h2 {
     border-image: linear-gradient(to right, #34A5E4, #B835E7) 1;
     border-radius: 50px;
 }
+
 hr {
     height: 7px;
     border-radius: 50px;
@@ -52,13 +73,13 @@ hr {
 }
 
 ::-webkit-scrollbar-track {
-    background: black; 
+    background: black;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #000; 
+    background: #000;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #555;
 }

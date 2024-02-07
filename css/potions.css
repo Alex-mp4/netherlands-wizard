@@ -1,74 +1,107 @@
 .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; 
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 0px 50px;
-  }
-  
-  .card {  
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 50px;
-    grid-auto-flow: row;
-    justify-content: start;
-    justify-items: stretch;
-    grid-template-areas:
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0px 50px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 50px;
+  grid-auto-flow: row;
+  justify-content: start;
+  justify-items: stretch;
+  grid-template-areas:
     "card-text card-image";
-    max-width: 1000px;
-    color: white;
-    margin: 100px 0px;
-    width: calc(50% - 10px); 
-    margin-bottom: 20px; 
+  max-width: 1000px;
+  color: white;
+  margin: 100px 0px;
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+}
+
+
+.card-text {
+  grid-area: card-text;
+}
+
+.card-image {
+  grid-area: card-image;
+}
+
+.card-image>img {
+  width: 100%;
+}
+
+hr {
+  margin: 10px 0px;
+}
+
+.card-head {
+  margin: 50px 0px;
+}
+
+.fire-line {
+  background: linear-gradient(to right, #E43434, #E7AA35);
+  background-size: 200% 200%;
+  animation: gradient 3s alternate infinite;
+}
+
+.water-line {
+  background: linear-gradient(to right, #3446E4, #35E7D1);
+  background-size: 200% 200%;
+  animation: gradient 3s alternate infinite;
+}
+
+.elec-line {
+  background: linear-gradient(to right, #891AF8, #BC32D3);
+  background-size: 200% 200%;
+  animation: gradient 3s alternate infinite;
+}
+
+.smoke-line {
+  background: linear-gradient(to right, #3A5976, #B1EAF4);
+  background-size: 200% 200%;
+  animation: gradient 3s alternate infinite;
+}
+
+
+.left {
+  order: -1;
+}
+
+.card-text>ul,
+.card-text>li {
+  margin: 10px 50px;
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
   }
-  
-  
-  .card-text { grid-area: card-text; }
-  
-  .card-image { grid-area: card-image; }
-  .card-image > img {
-      width: 100%;
+}
+
+@media (max-width: 1150px) {
+  .card {
+    width: 100%;
   }
-  hr {
-      margin: 10px 0px;
-  }
-  .card-head {
-      margin: 50px 0px;
-  }
-  .fire-line {
-      background-image: linear-gradient(to right, #E43434 , #E7AA35);
-  }
-  .water-line {
-      background-image: linear-gradient(to right, #3446E4 , #35E7D1);
-  
-  }
-  .elec-line {
-      background-image: linear-gradient(to right, #891AF8 , #BC32D3);
-  }
-  .smoke-line {
-      background-image: linear-gradient(to right, #3A5976 , #B1EAF4);
-  }
-  
-  
-  .left {
-    order: -1;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
   }
 
-  .card-text > ul,.card-text>  li {
-    margin:10px 50px;
+  50% {
+    background-position: 100% 50%;
   }
 
-  
-  @media (max-width: 768px) {
-    .card {
-      width: 100%; 
-    }
+  100% {
+    background-position: 0% 50%;
   }
-  @media (max-width: 1150px) {
-    .card {
-      width: 100%; 
-    }
-  }
-  
+}

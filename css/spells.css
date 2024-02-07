@@ -1,6 +1,6 @@
-.top-container {  
+.top-container {
     max-width: 1500px;
-    margin: auto ;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -10,21 +10,26 @@
     justify-items: stretch;
     grid-template-areas:
         "top-text top-image";
-    }
-    .top-text { 
-        grid-area: top-text; 
-        width: 80%;
-        align-items: center;
-       margin: 100px auto;
+}
 
-    }
-    hr {
-        height: 7px;
-        margin: 20px 0px;
-        border-radius: 50px;
-        background-image: linear-gradient(to right, #34A5E4 , #B835E7);
-        border: none;
-    }
+.top-text {
+    grid-area: top-text;
+    width: 80%;
+    min-width: 400px;
+    align-items: center;
+    margin: 100px auto;
+    background-color: #060312;
+}
+
+hr {
+    height: 7px;
+    margin: 20px 0px;
+    border-radius: 50px;
+    background: linear-gradient(to right, #34A5E4, #B835E7);
+    background-size: 200% 200%;
+    animation: gradient 3s alternate infinite;
+    border: none;
+}
 
 
 .cards-container {
@@ -33,14 +38,15 @@
 }
 
 
-.card {  
+.card {
+    background-color: #101010;
     display: grid;
     gap: 50px;
     grid-template-areas:
-    "card-text card-image";
+        "card-text card-image";
     max-width: 1000px;
     color: white;
-    margin: 100px 0px; 
+    margin: 25px 0px;
 }
 
 .right {
@@ -48,28 +54,74 @@
     justify-content: end;
 }
 
-.card-text { grid-area: card-text; }
-
-.card-image { grid-area: card-image; }
-.card-image > img {
-    width: 100%;
+.card-text {
+    grid-area: card-text;
+    background-color: #101010;
+    padding-left: 2vw;
 }
+
+.card-text>p,
+h2,
+h3,
+strong {
+    background-color: #101010;
+}
+
+.card-image {
+    grid-area: card-image;
+}
+
+.card-image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 hr {
     margin: 10px 0px;
 }
+
 .card-head {
     margin: 50px 0px;
-}
-.fire-line {
-    background-image: linear-gradient(to right, #E43434 , #E7AA35);
-}
-.water-line {
-    background-image: linear-gradient(to right, #3446E4 , #35E7D1);
+    background-color: #101010;
 
 }
-.elec-line {
-    background-image: linear-gradient(to right, #891AF8 , #BC32D3);
+
+.fire-line {
+    background: linear-gradient(to right, #E43434, #E7AA35);
+    background-size: 200% 200%;
+    animation: gradient 3s alternate infinite;
 }
+
+.water-line {
+    background: linear-gradient(to right, #3446E4, #35E7D1);
+    background-size: 200% 200%;
+    animation: gradient 3s alternate infinite;
+
+}
+
+.elec-line {
+    background: linear-gradient(to right, #891AF8, #BC32D3);
+    background-size: 200% 200%;
+    animation: gradient 3s alternate infinite;
+}
+
 .smoke-line {
-    background-image: linear-gradient(to right, #3A5976 , #B1EAF4);
+    background: linear-gradient(to right, #3A5976, #B1EAF4);
+    background-size: 200% 200%;
+    animation: gradient 3s alternate infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }

@@ -1,0 +1,92 @@
+.top-container {
+    max-width: 1500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 50px;
+    grid-auto-flow: row;
+    justify-content: start;
+    justify-items: stretch;
+    grid-template-areas:
+        "top-text top-image";
+}
+
+.top-text {
+    grid-area: top-text;
+    width: 80%;
+    min-width: 400px;
+    align-items: center;
+    margin: 100px auto;
+    background-color: #060312;
+}
+
+hr {
+    height: 7px;
+    margin: 20px 0px;
+    border-radius: 50px;
+    background: linear-gradient(to right, #34A5E4, #B835E7);
+    background-size: 200% 200%;
+    animation: gradient 3s alternate infinite;
+    border: none;
+}
+
+h2,
+.card>p {
+    color: white;
+    background-color: #101010;
+}
+
+.card {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #101010;
+    padding: 2vw;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.card>img {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 2vw;
+}
+
+.elder-line {
+    background: linear-gradient(to right, #1E7827, #883624);
+    background-size: 200% 200%;
+    animation: gradient 3s alternate infinite;
+}
+
+.dragon-line {
+    background: linear-gradient(to right, #1FD1F8, #883624);
+    background-size: 200% 200%;
+    animation: gradient 3s alternate infinite;
+}
+
+.unicorn-line {
+    background: linear-gradient(to right, #BC32D3, #883624);
+    background-size: 200% 200%;
+    animation: gradient 3s alternate infinite;
+}
+
+.phoenix-line {
+    background: linear-gradient(to right, #F8531F, #883624);
+    background-size: 200% 200%;
+    animation: gradient 3s alternate infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
