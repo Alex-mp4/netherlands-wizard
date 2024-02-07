@@ -1,3 +1,32 @@
+.top-container {  
+    max-width: 1500px;
+    margin: auto ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 50px;
+    grid-auto-flow: row;
+    justify-content: start;
+    justify-items: stretch;
+    grid-template-areas:
+        "top-text top-image";
+    }
+    .top-text { 
+        grid-area: top-text; 
+        width: 80%;
+        align-items: center;
+       margin: 100px auto;
+
+    }
+    hr {
+        height: 7px;
+        margin: 20px 0px;
+        border-radius: 50px;
+        background-image: linear-gradient(to right, #34A5E4 , #B835E7);
+        border: none;
+    }
+
+
 .cards-container {
     max-width: 1500px;
     margin: 0 auto;
