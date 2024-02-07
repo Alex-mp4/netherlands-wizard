@@ -46,3 +46,19 @@ hr {
     border-radius: 50px;
     border: none;
 }
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: black; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
