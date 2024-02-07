@@ -39,32 +39,3 @@ h1 {
     border-image: linear-gradient(to right, #34A5E4, #B835E7) 1;
     border-radius: 50px;
 }
-
-/* Top / First container  */
-.top-container {  
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 50px;
-    grid-auto-flow: row;
-    justify-content: start;
-    justify-items: stretch;
-    grid-template-areas:
-        "top-text top-image";
-    }
-
-    .top-text { 
-        grid-area: top-text; 
-        width: 70%;
-       margin: 0 auto;
-
-    }
-    .top-image { grid-area: top-image; }
-
-    hr {
-        height: 7px;
-        margin: 20px 0px;
-        border-radius: 50px;
-        background-image: linear-gradient(to right, #34A5E4 , #B835E7);
-        border: none;
-    }
