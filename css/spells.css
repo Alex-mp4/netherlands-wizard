@@ -3,21 +3,17 @@
     margin: 0 auto;
 }
 
+
 .card {  
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
     gap: 50px;
-    grid-auto-flow: row;
-    justify-content: start;
-    justify-items: stretch;
     grid-template-areas:
     "card-text card-image";
     max-width: 1000px;
     color: white;
-    margin: 100px 0px;
-    
+    margin: 100px 0px; 
 }
+
 .right {
     display: grid;
     justify-content: end;
