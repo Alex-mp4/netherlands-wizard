@@ -37,7 +37,6 @@ hr {
     margin: 0 auto;
 }
 
-
 .card {
     background-color: #101010;
     display: grid;
@@ -47,6 +46,12 @@ hr {
     max-width: 1000px;
     color: white;
     margin: 25px 0px;
+    transition: all 0.5s;
+}
+
+
+.card:hover {
+    transform: scale(1.03);
 }
 
 .right {
