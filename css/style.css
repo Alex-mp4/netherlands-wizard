@@ -45,10 +45,17 @@ h2 {
 /* Navbar */
 .topnav>ul {
     display: flex;
-    gap: 100px;
+    flex-wrap: wrap;
+    gap: 30px;
     margin: 50px 0px;
     justify-content: center;
     list-style: none;
+}
+
+@media(min-width: 480px) {
+    .topnav>ul {
+        gap: 50px;
+    }
 }
 
 .topnav>ul>li>a {

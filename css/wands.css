@@ -19,7 +19,13 @@
     align-items: center;
     margin: 100px auto;
     background-color: #060312;
+    padding: 20px;
 }
+
+@media(min-width: 475px) {
+    .top-text {
+    }  
+  }
 
 hr {
     height: 7px;
