@@ -10,6 +10,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     background-color: #060312;
+    line-height: 1.5;
 }
 
 p,
