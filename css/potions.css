@@ -9,7 +9,7 @@
   justify-content: start;
   justify-items: stretch;
   grid-template-areas:
-      "top-text top-image";
+    "top-text top-image";
 }
 
 .top-text {
@@ -71,6 +71,8 @@ hr {
 
 .card-image>img {
   width: 100%;
+  height: 20rem;
+  object-fit: cover;
 }
 
 hr {
