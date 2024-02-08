@@ -48,6 +48,7 @@ h2 {
     gap: 100px;
     margin: 50px 0px;
     justify-content: center;
+    list-style: none;
 }
 
 .topnav>ul>li>a {
@@ -61,6 +62,7 @@ h2 {
     border-style: solid;
     border-image: linear-gradient(to right, #34A5E4, #B835E7) 1;
     border-radius: 50px;
+    font-weight: 900;
 }
 
 hr {
