@@ -38,7 +38,7 @@ img {
     width: 750px;
 }
 
-button {
+.call-to-action {
     color: white;
     background: linear-gradient(to right, #34A5E4, #B835E7);
     border-radius: 50px;
@@ -46,6 +46,7 @@ button {
     margin-top: 20px;
     font-weight: 900;
     font-size: larger;
+    text-decoration: none;
     border-style: none;
     background-size: 200% 200%;
     animation: gradient 3s alternate infinite;
