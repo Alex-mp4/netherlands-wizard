@@ -81,26 +81,26 @@ hr {
   margin: 50px 0px;
 }
 
-.fire-line {
-  background: linear-gradient(to right, #E43434, #E7AA35);
+.health-line {
+  background: linear-gradient(to right, #CA5F5F, #F80000);
   background-size: 200% 200%;
   animation: gradient 3s alternate infinite;
 }
 
-.water-line {
+.mana-line {
   background: linear-gradient(to right, #3446E4, #35E7D1);
   background-size: 200% 200%;
   animation: gradient 3s alternate infinite;
 }
 
-.elec-line {
-  background: linear-gradient(to right, #891AF8, #BC32D3);
+.haste-line {
+  background: linear-gradient(to right, #B7E434, #35E7C7);
   background-size: 200% 200%;
   animation: gradient 3s alternate infinite;
 }
 
-.smoke-line {
-  background: linear-gradient(to right, #3A5976, #B1EAF4);
+.vitality-line {
+  background: linear-gradient(to right, #FFC42D, #E735D5);
   background-size: 200% 200%;
   animation: gradient 3s alternate infinite;
 }
