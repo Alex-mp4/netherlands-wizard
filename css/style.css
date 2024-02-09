@@ -72,12 +72,6 @@ h2 {
     font-weight: 900;
 }
 
-hr {
-    height: 7px;
-    border-radius: 50px;
-    border: none;
-}
-
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -106,4 +100,435 @@ hr {
     100% {
         background-position: 0% 50%;
     }
+}
+
+.index-top-container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: start;
+}
+
+@media(min-width: 769px) {
+    .top-container {
+        max-width: 1500px;
+        margin: auto;
+        align-items: center;
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 50px;
+        grid-auto-flow: row;
+        justify-content: start;
+        justify-items: stretch;
+        grid-template-areas:
+            "top-text top-image";
+    }
+}
+
+.top-text {
+    grid-area: top-text;
+    width: 80%;
+    align-items: center;
+    margin: 60px auto;
+}
+
+.top-text>h1 {
+    font-size: 48px;
+}
+
+@media(min-width: 475px) {
+    .top-text {
+        margin: 100px auto;
+    }
+}
+
+.top-image {
+    grid-area: top-image;
+}
+
+hr {
+    height: 7px;
+    margin: 20px 0px;
+    border-radius: 50px;
+    background: linear-gradient(to right, #34A5E4, #B835E7);
+    border: none;
+    background-size: 200% 200%;
+    animation: gradient 3s alternate infinite;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.call-to-action {
+    color: white;
+    background: linear-gradient(to right, #34A5E4, #B835E7);
+    border-radius: 50px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-weight: 900;
+    font-size: larger;
+    text-decoration: none;
+    border-style: none;
+    background-size: 200% 200%;
+    animation: gradient 3s alternate infinite;
+}
+
+.call-to-action:hover {
+    animation-play-state: paused;
+}
+
+
+.top-text {
+    grid-area: top-text;
+    width: 80%;
+    align-items: center;
+    margin: 100px auto;
+}
+
+.top-image {
+    grid-area: top-image;
+}
+
+.potion-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0px 50px;
+}
+
+.potion-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 50px;
+    grid-auto-flow: row;
+    justify-content: start;
+    justify-items: stretch;
+    grid-template-areas:
+        "card-text card-image";
+    max-width: 1000px;
+    color: white;
+    margin: 100px 0px;
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+
+
+.potion-card-text {
+    grid-area: card-text;
+}
+
+.potion-card-image {
+    grid-area: card-image;
+}
+
+.potion-card-image>img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.potion-card-head {
+    margin: 50px 0px;
+}
+
+
+.left {
+    order: -1;
+}
+
+.potion-card-text>ul,
+.potion-card-text>li {
+    margin: 10px 50px;
+}
+
+@media (max-width: 768px) {
+    .potion-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .potion-card {
+        width: 100%;
+    }
+}
+
+.spells-cards-container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.spells-card {
+    background-color: #101010;
+    display: grid;
+    gap: 50px;
+    grid-template-areas:
+        "card-text card-image";
+    max-width: 1000px;
+    color: white;
+    margin: 25px 0px;
+    transition: all 0.5s;
+}
+
+
+.spells-card:hover {
+    transform: scale(1.03);
+}
+
+.right {
+    display: grid;
+    justify-content: end;
+}
+
+.spells-card-text {
+    grid-area: card-text;
+    background-color: #101010;
+    padding-left: 2vw;
+}
+
+.spells-card p,
+.spells-card h2,
+.spells-card h3,
+.spells-card strong,
+.spells-card hr {
+    background-color: #101010;
+}
+
+.spells-card-image {
+    grid-area: card-image;
+}
+
+.spells-card-image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.spells-card-head {
+    margin: 50px 0px;
+    background-color: #101010;
+
+}
+
+
+.top-text {
+    grid-area: top-text;
+    width: 80%;
+    min-width: 400px;
+    align-items: center;
+    margin: 100px auto;
+    background-color: #060312;
+    padding: 20px;
+}
+
+.wands-card>h2,
+.wands-card>p {
+    color: white;
+    background-color: #101010;
+}
+
+.wands-card {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #101010;
+    padding: 2vw;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    transition: all 0.5s;
+}
+
+.wands-card>img {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 2vw;
+}
+
+.wands-card:hover {
+    transform: scale(1.03);
+}
+
+:root {
+    --card-height: 300px;
+    --card-width: calc(var(--card-height) / 0.7);
+}
+
+.test {
+    display: flex;
+    max-width: 1500px;
+    margin: 500px auto;
+
+}
+
+.wizard-card {
+    width: var(--card-width);
+    height: var(--card-height);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 36px;
+    perspective: 2500px;
+    margin: 0 50px;
+}
+
+.cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrapper {
+    transition: all 0.5s;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.wizard-card:hover .wrapper {
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+
+.wrapper::before,
+.wrapper::after {
+    content: "";
+    opacity: 0;
+    width: 100%;
+    height: 80px;
+    transition: all 0.5s;
+    position: absolute;
+    left: 0;
+}
+
+.wrapper::before {
+    top: 0;
+    height: 100%;
+    background-image: linear-gradient(to top,
+            transparent 46%,
+            rgba(12, 13, 19, 0.5) 68%,
+            rgba(12, 13, 19) 97%);
+}
+
+.wrapper::after {
+    bottom: 0;
+    opacity: 1;
+    background-image: linear-gradient(to bottom,
+            transparent 46%,
+            rgba(12, 13, 19, 0.5) 68%,
+            rgba(12, 13, 19) 97%);
+}
+
+.wizard-card:hover .wrapper::before,
+.wrapper::after {
+    opacity: 1;
+}
+
+.wizard-card:hover .wrapper::after {
+    height: 120px;
+}
+
+.title {
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.wizard-card:hover .title {
+    transform: translate3d(0%, -50px, 100px);
+}
+
+.character {
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: -1;
+}
+
+.wizard-card:hover .character {
+    opacity: 1;
+    transform: translate3d(0%, -30%, 100px);
+}
+
+.elder-line {
+    background: linear-gradient(to right, #1E7827, #883624);
+    background-size: 200% 200%;
+    animation: gradient 3s alternate infinite;
+}
+
+.dragon-line {
+    background: linear-gradient(to right, #1FD1F8, #883624);
+    background-size: 200% 200%;
+    animation: gradient 3s alternate infinite;
+}
+
+.unicorn-line {
+    background: linear-gradient(to right, #BC32D3, #883624);
+    background-size: 200% 200%;
+    animation: gradient 3s alternate infinite;
+}
+
+.phoenix-line {
+    background: linear-gradient(to right, #F8531F, #883624);
+    background-size: 200% 200%;
+    animation: gradient 3s alternate infinite;
+}
+
+.fire-line {
+    background: linear-gradient(to right, #E43434, #E7AA35);
+    background-size: 200% 200%;
+    animation: gradient 3s alternate infinite;
+}
+
+.water-line {
+    background: linear-gradient(to right, #3446E4, #35E7D1);
+    background-size: 200% 200%;
+    animation: gradient 3s alternate infinite;
+}
+
+.elec-line {
+    background: linear-gradient(to right, #891AF8, #BC32D3);
+    background-size: 200% 200%;
+    animation: gradient 3s alternate infinite;
+}
+
+.smoke-line {
+    background: linear-gradient(to right, #3A5976, #B1EAF4);
+    background-size: 200% 200%;
+    animation: gradient 3s alternate infinite;
+}
+
+.health-line {
+    background: linear-gradient(to right, #CA5F5F, #F80000);
+    background-size: 200% 200%;
+    animation: gradient 3s alternate infinite;
+}
+
+.mana-line {
+    background: linear-gradient(to right, #3446E4, #35E7D1);
+    background-size: 200% 200%;
+    animation: gradient 3s alternate infinite;
+}
+
+.haste-line {
+    background: linear-gradient(to right, #B7E434, #35E7C7);
+    background-size: 200% 200%;
+    animation: gradient 3s alternate infinite;
+}
+
+.vitality-line {
+    background: linear-gradient(to right, #FFC42D, #E735D5);
+    background-size: 200% 200%;
+    animation: gradient 3s alternate infinite;
 }

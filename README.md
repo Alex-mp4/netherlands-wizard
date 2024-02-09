@@ -1,1 +1,1 @@
-# wizard
+# The Wizard's Handbook
